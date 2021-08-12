@@ -21,6 +21,7 @@
 		FE8DDD7926C57F160074DE38 /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8DDD7526C57F160074DE38 /* Lesson+CoreDataClass.swift */; };
 		FE8DDD7A26C57F160074DE38 /* Lesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8DDD7626C57F160074DE38 /* Lesson+CoreDataProperties.swift */; };
 		FE8DDD7D26C5813A0074DE38 /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8DDD7C26C5813A0074DE38 /* LessonTableViewController.swift */; };
+		FE8DDD8026C58D810074DE38 /* LessonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8DDD7F26C58D810074DE38 /* LessonService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		FE8DDD7526C57F160074DE38 /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Lesson+CoreDataClass.swift"; path = "KeystonePark/Extentation/Lesson+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		FE8DDD7626C57F160074DE38 /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Lesson+CoreDataProperties.swift"; path = "KeystonePark/Extentation/Lesson+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		FE8DDD7C26C5813A0074DE38 /* LessonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
+		FE8DDD7F26C58D810074DE38 /* LessonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		FE8DDD3F26C579DE0074DE38 /* KeystonePark */ = {
 			isa = PBXGroup;
 			children = (
+				FE8DDD8126C58D880074DE38 /* service */,
 				FE8DDD7E26C581580074DE38 /* controller */,
 				FE8DDD7C26C5813A0074DE38 /* LessonTableViewController.swift */,
 				FE8DDD7B26C57F2E0074DE38 /* Extentation */,
@@ -160,6 +163,14 @@
 			children = (
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		FE8DDD8126C58D880074DE38 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				FE8DDD7F26C58D810074DE38 /* LessonService.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +308,7 @@
 				FE8DDD7D26C5813A0074DE38 /* LessonTableViewController.swift in Sources */,
 				FE8DDD4526C579DE0074DE38 /* ViewController.swift in Sources */,
 				FE8DDD7926C57F160074DE38 /* Lesson+CoreDataClass.swift in Sources */,
+				FE8DDD8026C58D810074DE38 /* LessonService.swift in Sources */,
 				FE8DDD4B26C579DE0074DE38 /* KeystonePark.xcdatamodeld in Sources */,
 				FE8DDD4126C579DE0074DE38 /* AppDelegate.swift in Sources */,
 				FE8DDD4326C579DE0074DE38 /* SceneDelegate.swift in Sources */,

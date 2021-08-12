@@ -6,21 +6,30 @@
 //
 
 import UIKit
+import CoreData
 
 class LessonTableViewController: UITableViewController {
-
+    
+    //Mark: Public Prperties
+    
+    var moc: NSManagedObjectContext? {
+        didSet{
+            if let moc = moc {
+                lessonService = LessonService(moc: moc)
+            }
+        }
+    }
+    // MARK - Private Properties
+    private var lessonService: LessonService?
+    private var studentList = [Student]()
+    
     @IBAction func addStudentAction(_ sender: UIBarButtonItem) {
         present(alertController(actionType: "add"), animated: true, completion: nil)
     }
-    let student = ["Ben","John"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        loadStudents()
     }
 
     // MARK: - Table view data source
@@ -32,7 +41,7 @@ class LessonTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return student.count
+        return studentList.count
     }
 
     
@@ -40,7 +49,8 @@ class LessonTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "studentCell", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = student[indexPath.row]
+        cell.textLabel?.text = studentList[indexPath.row].name
+        cell.detailTextLabel?.text = studentList[indexPath.row].lesson?.type
         return cell
     }
     
@@ -55,8 +65,21 @@ class LessonTableViewController: UITableViewController {
             textField.placeholder = "Lesson Type | Snowboard"
         }
         
-        let defaultAction = UIAlertAction(title: actionType.uppercased(), style: .default) { (action) in
+        let defaultAction = UIAlertAction(title: actionType.uppercased(), style: .default) { [weak self] (action) in
+            guard let studentName = alertController.textFields?[0].text, let lesson = alertController.textFields?[1].text else {return}
+            if actionType.caseInsensitiveCompare("add") == .orderedSame{
+                if let lessonType = LessonType(rawValue: lesson.lowercased()){
+                    self?.lessonService?.addStudent(name: studentName, for: lessonType, completion: { (success, students) in
+                        if success {
+                            self?.studentList = students
+                        }
+                    })
+                }
+            }
             
+            DispatchQueue.main.async {
+                self?.loadStudents()
+            }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (action) in
             
@@ -65,6 +88,13 @@ class LessonTableViewController: UITableViewController {
         alertController.addAction(cancelAction)
         
         return alertController
+    }
+    
+    private func loadStudents(){
+        if let students = lessonService?.getAllStudents(){
+            studentList = students
+            tableView.reloadData()
+        }
     }
 
 }
