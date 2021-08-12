@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE8DDD4126C579DE0074DE38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8DDD4026C579DE0074DE38 /* AppDelegate.swift */; };
+		FE8DDD4326C579DE0074DE38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8DDD4226C579DE0074DE38 /* SceneDelegate.swift */; };
+		FE8DDD4526C579DE0074DE38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8DDD4426C579DE0074DE38 /* ViewController.swift */; };
+		FE8DDD4826C579DE0074DE38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE8DDD4626C579DE0074DE38 /* Main.storyboard */; };
+		FE8DDD4B26C579DE0074DE38 /* KeystonePark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE8DDD4926C579DE0074DE38 /* KeystonePark.xcdatamodeld */; };
+		FE8DDD4D26C579DF0074DE38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE8DDD4C26C579DF0074DE38 /* Assets.xcassets */; };
+		FE8DDD5026C579DF0074DE38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE8DDD4E26C579DF0074DE38 /* LaunchScreen.storyboard */; };
+		FE8DDD5B26C579E00074DE38 /* KeystoneParkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8DDD5A26C579E00074DE38 /* KeystoneParkTests.swift */; };
+		FE8DDD6626C579E00074DE38 /* KeystoneParkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8DDD6526C579E00074DE38 /* KeystoneParkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE8DDD5726C579E00074DE38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE8DDD3526C579DE0074DE38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE8DDD3C26C579DE0074DE38;
+			remoteInfo = KeystonePark;
+		};
+		FE8DDD6226C579E00074DE38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE8DDD3526C579DE0074DE38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE8DDD3C26C579DE0074DE38;
+			remoteInfo = KeystonePark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE8DDD3D26C579DE0074DE38 /* KeystonePark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeystonePark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8DDD4026C579DE0074DE38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE8DDD4226C579DE0074DE38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE8DDD4426C579DE0074DE38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE8DDD4726C579DE0074DE38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE8DDD4A26C579DE0074DE38 /* KeystonePark.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KeystonePark.xcdatamodel; sourceTree = "<group>"; };
+		FE8DDD4C26C579DF0074DE38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE8DDD4F26C579DF0074DE38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE8DDD5126C579DF0074DE38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE8DDD5626C579E00074DE38 /* KeystoneParkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeystoneParkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8DDD5A26C579E00074DE38 /* KeystoneParkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeystoneParkTests.swift; sourceTree = "<group>"; };
+		FE8DDD5C26C579E00074DE38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE8DDD6126C579E00074DE38 /* KeystoneParkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeystoneParkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8DDD6526C579E00074DE38 /* KeystoneParkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeystoneParkUITests.swift; sourceTree = "<group>"; };
+		FE8DDD6726C579E00074DE38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE8DDD3A26C579DE0074DE38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8DDD5326C579E00074DE38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8DDD5E26C579E00074DE38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE8DDD3426C579DE0074DE38 = {
+			isa = PBXGroup;
+			children = (
+				FE8DDD3F26C579DE0074DE38 /* KeystonePark */,
+				FE8DDD5926C579E00074DE38 /* KeystoneParkTests */,
+				FE8DDD6426C579E00074DE38 /* KeystoneParkUITests */,
+				FE8DDD3E26C579DE0074DE38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE8DDD3E26C579DE0074DE38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE8DDD3D26C579DE0074DE38 /* KeystonePark.app */,
+				FE8DDD5626C579E00074DE38 /* KeystoneParkTests.xctest */,
+				FE8DDD6126C579E00074DE38 /* KeystoneParkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE8DDD3F26C579DE0074DE38 /* KeystonePark */ = {
+			isa = PBXGroup;
+			children = (
+				FE8DDD4026C579DE0074DE38 /* AppDelegate.swift */,
+				FE8DDD4226C579DE0074DE38 /* SceneDelegate.swift */,
+				FE8DDD4426C579DE0074DE38 /* ViewController.swift */,
+				FE8DDD4626C579DE0074DE38 /* Main.storyboard */,
+				FE8DDD4C26C579DF0074DE38 /* Assets.xcassets */,
+				FE8DDD4E26C579DF0074DE38 /* LaunchScreen.storyboard */,
+				FE8DDD5126C579DF0074DE38 /* Info.plist */,
+				FE8DDD4926C579DE0074DE38 /* KeystonePark.xcdatamodeld */,
+			);
+			path = KeystonePark;
+			sourceTree = "<group>";
+		};
+		FE8DDD5926C579E00074DE38 /* KeystoneParkTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE8DDD5A26C579E00074DE38 /* KeystoneParkTests.swift */,
+				FE8DDD5C26C579E00074DE38 /* Info.plist */,
+			);
+			path = KeystoneParkTests;
+			sourceTree = "<group>";
+		};
+		FE8DDD6426C579E00074DE38 /* KeystoneParkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE8DDD6526C579E00074DE38 /* KeystoneParkUITests.swift */,
+				FE8DDD6726C579E00074DE38 /* Info.plist */,
+			);
+			path = KeystoneParkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE8DDD3C26C579DE0074DE38 /* KeystonePark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE8DDD6A26C579E00074DE38 /* Build configuration list for PBXNativeTarget "KeystonePark" */;
+			buildPhases = (
+				FE8DDD3926C579DE0074DE38 /* Sources */,
+				FE8DDD3A26C579DE0074DE38 /* Frameworks */,
+				FE8DDD3B26C579DE0074DE38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeystonePark;
+			productName = KeystonePark;
+			productReference = FE8DDD3D26C579DE0074DE38 /* KeystonePark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE8DDD5526C579E00074DE38 /* KeystoneParkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE8DDD6D26C579E00074DE38 /* Build configuration list for PBXNativeTarget "KeystoneParkTests" */;
+			buildPhases = (
+				FE8DDD5226C579E00074DE38 /* Sources */,
+				FE8DDD5326C579E00074DE38 /* Frameworks */,
+				FE8DDD5426C579E00074DE38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE8DDD5826C579E00074DE38 /* PBXTargetDependency */,
+			);
+			name = KeystoneParkTests;
+			productName = KeystoneParkTests;
+			productReference = FE8DDD5626C579E00074DE38 /* KeystoneParkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE8DDD6026C579E00074DE38 /* KeystoneParkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE8DDD7026C579E00074DE38 /* Build configuration list for PBXNativeTarget "KeystoneParkUITests" */;
+			buildPhases = (
+				FE8DDD5D26C579E00074DE38 /* Sources */,
+				FE8DDD5E26C579E00074DE38 /* Frameworks */,
+				FE8DDD5F26C579E00074DE38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE8DDD6326C579E00074DE38 /* PBXTargetDependency */,
+			);
+			name = KeystoneParkUITests;
+			productName = KeystoneParkUITests;
+			productReference = FE8DDD6126C579E00074DE38 /* KeystoneParkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE8DDD3526C579DE0074DE38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FE8DDD3C26C579DE0074DE38 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					FE8DDD5526C579E00074DE38 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FE8DDD3C26C579DE0074DE38;
+					};
+					FE8DDD6026C579E00074DE38 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FE8DDD3C26C579DE0074DE38;
+					};
+				};
+			};
+			buildConfigurationList = FE8DDD3826C579DE0074DE38 /* Build configuration list for PBXProject "KeystonePark" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE8DDD3426C579DE0074DE38;
+			productRefGroup = FE8DDD3E26C579DE0074DE38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE8DDD3C26C579DE0074DE38 /* KeystonePark */,
+				FE8DDD5526C579E00074DE38 /* KeystoneParkTests */,
+				FE8DDD6026C579E00074DE38 /* KeystoneParkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE8DDD3B26C579DE0074DE38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8DDD5026C579DF0074DE38 /* LaunchScreen.storyboard in Resources */,
+				FE8DDD4D26C579DF0074DE38 /* Assets.xcassets in Resources */,
+				FE8DDD4826C579DE0074DE38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8DDD5426C579E00074DE38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8DDD5F26C579E00074DE38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE8DDD3926C579DE0074DE38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8DDD4526C579DE0074DE38 /* ViewController.swift in Sources */,
+				FE8DDD4B26C579DE0074DE38 /* KeystonePark.xcdatamodeld in Sources */,
+				FE8DDD4126C579DE0074DE38 /* AppDelegate.swift in Sources */,
+				FE8DDD4326C579DE0074DE38 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8DDD5226C579E00074DE38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8DDD5B26C579E00074DE38 /* KeystoneParkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8DDD5D26C579E00074DE38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8DDD6626C579E00074DE38 /* KeystoneParkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE8DDD5826C579E00074DE38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE8DDD3C26C579DE0074DE38 /* KeystonePark */;
+			targetProxy = FE8DDD5726C579E00074DE38 /* PBXContainerItemProxy */;
+		};
+		FE8DDD6326C579E00074DE38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE8DDD3C26C579DE0074DE38 /* KeystonePark */;
+			targetProxy = FE8DDD6226C579E00074DE38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE8DDD4626C579DE0074DE38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE8DDD4726C579DE0074DE38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE8DDD4E26C579DF0074DE38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE8DDD4F26C579DF0074DE38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE8DDD6826C579E00074DE38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE8DDD6926C579E00074DE38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE8DDD6B26C579E00074DE38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeystonePark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = glucode.KeystonePark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE8DDD6C26C579E00074DE38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeystonePark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = glucode.KeystonePark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE8DDD6E26C579E00074DE38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeystoneParkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = glucode.KeystoneParkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeystonePark.app/KeystonePark";
+			};
+			name = Debug;
+		};
+		FE8DDD6F26C579E00074DE38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeystoneParkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = glucode.KeystoneParkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeystonePark.app/KeystonePark";
+			};
+			name = Release;
+		};
+		FE8DDD7126C579E00074DE38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeystoneParkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = glucode.KeystoneParkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeystonePark;
+			};
+			name = Debug;
+		};
+		FE8DDD7226C579E00074DE38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeystoneParkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = glucode.KeystoneParkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeystonePark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE8DDD3826C579DE0074DE38 /* Build configuration list for PBXProject "KeystonePark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8DDD6826C579E00074DE38 /* Debug */,
+				FE8DDD6926C579E00074DE38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE8DDD6A26C579E00074DE38 /* Build configuration list for PBXNativeTarget "KeystonePark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8DDD6B26C579E00074DE38 /* Debug */,
+				FE8DDD6C26C579E00074DE38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE8DDD6D26C579E00074DE38 /* Build configuration list for PBXNativeTarget "KeystoneParkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8DDD6E26C579E00074DE38 /* Debug */,
+				FE8DDD6F26C579E00074DE38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE8DDD7026C579E00074DE38 /* Build configuration list for PBXNativeTarget "KeystoneParkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8DDD7126C579E00074DE38 /* Debug */,
+				FE8DDD7226C579E00074DE38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE8DDD4926C579DE0074DE38 /* KeystonePark.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE8DDD4A26C579DE0074DE38 /* KeystonePark.xcdatamodel */,
+			);
+			currentVersion = FE8DDD4A26C579DE0074DE38 /* KeystonePark.xcdatamodel */;
+			path = KeystonePark.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FE8DDD3526C579DE0074DE38 /* Project object */;
+}
