@@ -22,6 +22,7 @@ class LessonTableViewController: UITableViewController {
     // MARK - Private Properties
     private var lessonService: LessonService?
     private var studentList = [Student]()
+    private var studentToUpdate: Student?
     
     @IBAction func addStudentAction(_ sender: UIBarButtonItem) {
         present(alertController(actionType: "add"), animated: true, completion: nil)
@@ -53,27 +54,43 @@ class LessonTableViewController: UITableViewController {
         cell.detailTextLabel?.text = studentList[indexPath.row].lesson?.type
         return cell
     }
-    
+    //MARK: - TableView Delegate
 
-   // Mark: - Private
-    private func alertController(actionType: String) -> UIAlertController{
-        let alertController = UIAlertController(title: "Keystone Park Lesson", message: "Student Infp", preferredStyle: .alert)
-        alertController.addTextField { (textField: UITextField) in
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        studentToUpdate = studentList[indexPath.row]
+        present(alertController(actionType: "update"), animated: true, completion: nil)
+    }
+    
+    private func alertController(actionType: String) -> UIAlertController {
+        let alertController = UIAlertController(title: "Keystone Park Lesson", message: "Student Info", preferredStyle: .alert)
+        
+        alertController.addTextField { [weak self] (textField: UITextField) in
             textField.placeholder = "Name"
+            textField.text = self?.studentToUpdate == nil ? "" : self?.studentToUpdate?.name
+            
         }
-        alertController.addTextField { (textField: UITextField) in
-            textField.placeholder = "Lesson Type | Snowboard"
+        
+        alertController.addTextField { [weak self] (textField: UITextField) in
+            textField.placeholder = "Lesson Type: Ski | Snowboard"
+            textField.text = self?.studentToUpdate == nil ? "" : self?.studentToUpdate?.lesson?.type
         }
         
         let defaultAction = UIAlertAction(title: actionType.uppercased(), style: .default) { [weak self] (action) in
-            guard let studentName = alertController.textFields?[0].text, let lesson = alertController.textFields?[1].text else {return}
-            if actionType.caseInsensitiveCompare("add") == .orderedSame{
-                if let lessonType = LessonType(rawValue: lesson.lowercased()){
+            guard let studentName = alertController.textFields?[0].text, let lesson = alertController.textFields?[1].text else { return }
+            
+            if actionType.caseInsensitiveCompare("add") == .orderedSame {
+                if let lessonType = LessonType(rawValue: lesson.lowercased()) {
                     self?.lessonService?.addStudent(name: studentName, for: lessonType, completion: { (success, students) in
                         if success {
                             self?.studentList = students
                         }
                     })
+                }else {
+                    guard let name = alertController.textFields?.first?.text, !name.isEmpty, let studentToUpdate = self?.studentToUpdate, let lessonType = alertController.textFields?[1].text else {
+                        return
+                    }
+                    self?.lessonService?.update(currentStudent: studentToUpdate, withName: name, forLesson: lessonType)
+                    self?.studentToUpdate = nil
                 }
             }
             
@@ -81,20 +98,22 @@ class LessonTableViewController: UITableViewController {
                 self?.loadStudents()
             }
         }
+        
         let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (action) in
             
         }
+        
         alertController.addAction(defaultAction)
         alertController.addAction(cancelAction)
         
         return alertController
     }
     
-    private func loadStudents(){
-        if let students = lessonService?.getAllStudents(){
+    
+    private func loadStudents() {
+        if let students = lessonService?.getAllStudents() {
             studentList = students
             tableView.reloadData()
         }
     }
-
 }

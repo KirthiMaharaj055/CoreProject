@@ -115,7 +115,6 @@
 			children = (
 				FE8DDD8126C58D880074DE38 /* service */,
 				FE8DDD7E26C581580074DE38 /* controller */,
-				FE8DDD7C26C5813A0074DE38 /* LessonTableViewController.swift */,
 				FE8DDD7B26C57F2E0074DE38 /* Extentation */,
 				FE8DDD4026C579DE0074DE38 /* AppDelegate.swift */,
 				FE8DDD4226C579DE0074DE38 /* SceneDelegate.swift */,
@@ -161,6 +160,7 @@
 		FE8DDD7E26C581580074DE38 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				FE8DDD7C26C5813A0074DE38 /* LessonTableViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";

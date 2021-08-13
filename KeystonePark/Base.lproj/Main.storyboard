@@ -48,7 +48,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Keystone Park" id="48Z-UN-3jF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="GOR-5p-d7s">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="addStudentAction:" destination="EWa-kA-ORU" id="0J9-xS-Tn0"/>
                             </connections>
@@ -67,6 +67,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="uTq-BU-gaC">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <color key="barTintColor" systemColor="systemOrangeColor"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
