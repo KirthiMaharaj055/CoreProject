@@ -141,7 +141,7 @@ class LessonService {
         
         return lesson
     }
-    
+    // register
     private func register(_ student: Student, for lesson: Lesson) {
         student.lesson = lesson
     }
