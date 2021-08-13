@@ -61,6 +61,15 @@ class LessonTableViewController: UITableViewController {
         present(alertController(actionType: "update"), animated: true, completion: nil)
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            lessonService?.delete(student: studentList[indexPath.row])
+            studentList.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+       loadStudents()
+    }
+    
     private func alertController(actionType: String) -> UIAlertController {
         let alertController = UIAlertController(title: "Keystone Park Lesson", message: "Student Info", preferredStyle: .alert)
         
@@ -99,8 +108,8 @@ class LessonTableViewController: UITableViewController {
             }
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (action) in
-            
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default) { [weak self] (action) in
+            self?.studentToUpdate = nil
         }
         
         alertController.addAction(defaultAction)
